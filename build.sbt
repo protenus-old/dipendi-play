@@ -28,7 +28,7 @@ libraryDependencies ++= Seq(
   "com.typesafe.play" %% "play-cache" % playVersion % Test // cache plugin add extra bindings which have some specialties and will be tested automatically
 )
 
-git.remoteRepo := "git@github.com:scaldi/scaldi-play.git"
+git.remoteRepo := "git@github.com:protenus/dipendi-play.git"
 
 // Site and docs
 
