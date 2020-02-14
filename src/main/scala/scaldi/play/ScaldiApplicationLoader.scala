@@ -14,8 +14,6 @@ class ScaldiApplicationLoader(val builder: ScaldiApplicationBuilder) extends App
       .loadConfig(context.initialConfiguration)
       .prependModule(new Module {
         bind [OptionalDevContext] to new OptionalDevContext(context.devContext)
-        // TODO: evaluate if `OptionalSourceMapper` still needs to be bound
-        bind [OptionalSourceMapper] to new OptionalSourceMapper(context.devContext.map(_.sourceMapper))
       })
       .build()
 }
